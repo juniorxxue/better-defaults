@@ -67,6 +67,7 @@
 
   (show-paren-mode 1)
   (setq-default indent-tabs-mode nil)
+  (setq-default cursor-type 'bar)
   (savehist-mode 1)
   (setq save-interprogram-paste-before-kill t
         apropos-do-all t
@@ -76,6 +77,12 @@
         load-prefer-newer t
         ediff-window-setup-function 'ediff-setup-windows-plain
         custom-file (expand-file-name "~/.emacs.d/custom.el"))
+
+  ;;; I prefer cmd key for meta
+  (setq mac-option-key-is-meta nil
+        mac-command-key-is-meta t
+        mac-command-modifier 'meta
+        mac-option-modifier 'none)
 
   (unless backup-directory-alist
     (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
