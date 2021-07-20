@@ -78,6 +78,8 @@
         ediff-window-setup-function 'ediff-setup-windows-plain
         custom-file (expand-file-name "~/.emacs.d/custom.el"))
 
+  (global-hl-line-mode 1)
+
   ;;; I prefer cmd key for meta
   (setq mac-option-key-is-meta nil
         mac-command-key-is-meta t
