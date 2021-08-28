@@ -79,6 +79,10 @@
         custom-file (expand-file-name "~/.emacs.d/custom.el"))
 
   ;; (global-hl-line-mode 1)
+  
+  ;; C-wheel to zoom in/out
+  (global-set-key [C-mouse-4] 'text-scale-increase)
+  (global-set-key [C-mouse-5] 'text-scale-decrease)
 
   ;;; I prefer cmd key for meta
   (setq mac-option-key-is-meta nil
